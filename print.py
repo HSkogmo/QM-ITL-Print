@@ -27,6 +27,7 @@ transport.close()
 print 'Upload complete'
 
 ## Available printers
+print 'Finding available printers'
 ssh = paramiko.SSHClient()
 ssh.load_system_host_keys()
 ssh.connect(host, username = username, password = password)

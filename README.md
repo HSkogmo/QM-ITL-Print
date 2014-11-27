@@ -22,8 +22,13 @@ are correct then the file with be uploaded to the school server. The script will
 then login and query for available printers. After you have selected a printer it
 will send the file for printing.
 
+A little tip is to make an alias 
+
 ## Todo
 - Make path if it doesn't exists
 - Proper error messages on authentication failure and so on
-- Known hosts might stop SSH operations
 - Make a "How it works" section in the README
+
+## Known issues
+- Might have some Windows issues due to the use of the SSH Protocol
+- Known hosts might stop SSH operations if the host is not in the known_hosts file.
